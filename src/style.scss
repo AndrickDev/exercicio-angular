@@ -1,0 +1,24 @@
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+$my-custom-theme: mat.define-light-theme((
+  color: (
+    primary: mat.define-palette(mat.$blue-palette),  // Cor principal
+    accent: mat.define-palette(mat.$green-palette),  // Cor de destaque (alterada)
+  ),
+  typography: mat.define-typography-config(),
+  density: 0
+));
+
+.custom-input .mat-mdc-text-field-wrapper {
+    --mdc-outlined-text-field-focus-outline-color: #007bff !important; /* Borda azul ao focar */
+    --mdc-outlined-text-field-label-text-color: #007bff !important; /* Texto do label azul ao focar */
+    
+  }
+  /* Define a cor do label ao focar */
+mat-form-field.mat-focused .mat-mdc-floating-label {
+    color: #0671f3 !important; /* Azul */
+  }
+
+@include mat.all-component-themes($my-custom-theme);

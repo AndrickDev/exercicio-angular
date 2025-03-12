@@ -1,0 +1,90 @@
+.mat-toolbar {
+  background-color: #0671f3;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card {
+  width: 600px;
+  height: 400px;
+  border-radius: 20px;
+  background-color: #e14646;
+}
+
+.card-header {
+  background-color: #f90303; 
+  color: white; 
+  padding: 16px 20px; 
+  margin-bottom: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  text-align: center; 
+}
+
+.form mat-form-field {
+  display: block;
+  
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between; /* Space buttons at opposite ends */
+  gap: 12px;
+}
+
+.button:nth-child(1) {
+  background-color: #0671f3;
+}
+
+.button:nth-child(2) {
+  background-color: #e32e1f;
+}
+/* Corrigindo a cor da borda e do label no foco */
+mat-form-field {
+  --mdc-outlined-text-field-focus-outline-color: #ffffff !important; /* Branco */
+  --mdc-outlined-text-field-label-text-color: #ffffff !important; /* Branco */
+}
+
+/* Alternativamente, você pode usar uma cor azul para seguir o estilo do botão */
+mat-form-field {
+  --mdc-outlined-text-field-focus-outline-color: #0671f3 !important; /* Azul */
+  --mdc-outlined-text-field-label-text-color: #0671f3 !important; /* Azul */
+}
+/* Alterando a cor do label quando o input está focado */
+.mat-mdc-text-field--focused .mdc-floating-label {
+  color: #0671f3 !important; /* Azul */
+}
+/* Ajustando a cor do label ao focar */
+.mat-mdc-form-field.mat-focused .mdc-floating-label {
+  color: #0671f3 !important; /* Azul */
+}
+
+/* Forçando a cor correta no input ativo */
+.mat-mdc-form-field.mat-focused .mat-mdc-floating-label {
+  color: #0671f3 !important; /* Azul */
+}
+/* Ajustando a cor do label ao focar */
+.mat-mdc-form-field.mat-focused .mat-mdc-floating-label {
+  color: #0671f3 !important; /* Azul */
+}
+
+/* Forçando a cor correta no input ativo */
+.mat-mdc-form-field.mat-focused .mat-mdc-floating-label, 
+.mat-mdc-form-field .mat-mdc-floating-label {
+  color: #0671f3 !important; /* Azul */
+}
+
+/* Garantindo que a cor não seja sobrescrita em outros estados */
+.mat-mdc-form-field .mat-mdc-floating-label {
+  color: #0671f3 !important; /* Azul */
+}
+/* Sobrescrevendo a cor do indicador de foco no Angular Material */
+:root {
+  --mdc-filled-text-field-focus-active-indicator-color: #0671f3; /* Azul */
+}
