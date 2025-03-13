@@ -16,6 +16,7 @@ export class RegistrarComponent {
     {value: 'jogo-0', viewValue: 'Jogo'},
     {value: 'mercado-1', viewValue: 'Mercado'},
     {value: 'despesas-2', viewValue: 'Despesas'},
+    {value: 'combustível', viewValue: 'Combustível'},
   ];
 
 }
