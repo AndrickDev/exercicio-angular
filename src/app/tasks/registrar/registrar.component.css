@@ -1,0 +1,29 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
+
+.form mat-form-field {
+  display: block;
+  
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.button:nth-child(1) {
+  background-color: #0671f3;
+}
+
+.button:nth-child(2) {
+  background-color: #e32e1f;
+}

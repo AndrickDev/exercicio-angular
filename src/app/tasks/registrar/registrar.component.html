@@ -1,0 +1,32 @@
+<mat-toolbar class="mat-toolbar">
+  Tela de cadastro
+</mat-toolbar>
+<div class="container">
+  <mat-card class="card">
+    <mat-card-header class="card-header">
+      <mat-card-title>Cadastro</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form class="form">
+        <mat-form-field appearance="outline">
+          <mat-label>Categorias de tarefa</mat-label>
+          <mat-select [(ngModel)]="selectedCategory" name="category"> 
+            <mat-option *ngFor="let task of tasks" [value]="task.value">{{task.viewValue}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Nome da tarefa</mat-label> 
+          <input matInput [(ngModel)]="taskName" name="taskName" /> 
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Descrição</mat-label> 
+          <input matInput [(ngModel)]="taskDescription" name="taskDescription" /> 
+        </mat-form-field>
+      </form>
+    </mat-card-content>
+    <mat-card-actions class="buttons-container">
+      <button class="button" mat-button (click)="saveCadastro()">Criar</button>
+      <button class="button" mat-button>Cancelar</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
